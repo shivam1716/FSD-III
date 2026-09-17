@@ -5,7 +5,6 @@ using namespace std;
 
 class student {
 private:
-    // Data members (attributes)
     int rollno;
     string name;
     float marks;
@@ -14,16 +13,12 @@ public:
     void input() {
         cout << "Enter roll number: ";
         cin >> rollno;
-
-        cin.ignore(); // To ignore the newline character
-
+        cin.ignore(); 
         cout << "Enter name: ";
         getline(cin, name);
-
         cout << "Enter marks: ";
         cin >> marks;
     }
-
     void display() {
         cout << "Roll Number: " << rollno << endl;
         cout << "Name: " << name << endl;
@@ -31,7 +26,6 @@ public:
         return;
     }
 };
-
 int main() {
     student s1; // Object of class student
 
